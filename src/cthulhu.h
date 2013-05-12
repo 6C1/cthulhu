@@ -1,4 +1,3 @@
-
 /*  This file is part of CTHULHU.                                     
  *                                                                      
  *  CTHULHU is free software: you can redistribute it and/or modify   
@@ -32,6 +31,8 @@
 #define INC(x) (x)++
 #define MIN(x,y) (x < y) ? x : y
 #define MAX(x,y) (x > y) ? x : y
+
+#define CHANT() printf("Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn")
 
 typedef struct dstr {
   char* str;
