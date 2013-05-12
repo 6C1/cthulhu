@@ -40,45 +40,49 @@
 
         
 
-<h1>CTHULHU</h1>
-
-<p>C To Huffman Unary Library (Head Utility)</p>
-
 <p>CTHULHU is a system for converting C code through brainfsck into huffman-encoded unary.</p>
 
-<p><img src="http://www.gnu.org/graphics/gplv3-127x51.png" alt="GPL"></p>
+<h1>Design</h1>
 
-<h3>Central design</h3>
-
-<h4>C to Huffman Unary Conversion</h4>
+<h2>C to Huffman Unary Conversion</h2>
 
 <ol>
 <li>C --&gt; brainfsck (via <a href="http://savannah.nongnu.org/projects/libbf">http://savannah.nongnu.org/projects/libbf</a> )</li>
 <li>brainfsck --&gt; unary (via custom compilation)</li>
 <li>unary --&gt; hexadecimal string</li>
 <li>The final string is huffman encoded and stored in a binary file.</li>
-</ol><h4>Runtime interpretation</h4>
+</ol><h2>Runtime interpretation</h2>
 
 <ol>
 <li>Huffman decoding</li>
 <li>Compilation to brainfsck</li>
 <li>brainfsck interpreter</li>
-</ol><h2>Background</h2>
+</ol><h1>Background</h1>
 
-<h3>Unary and Brainfsck</h3>
+<h2>Unary and Brainfsck</h2>
 
 <p>Unary is an ultra-minimalist <a href="http://esolangs.org/wiki/Esoteric_programming_language">esoteric language</a> 
 consisting of repetitions of a single character. This string represents a series of commands in 
 <a href="http://esolangs.org/w/index.php?title=Brainfsck">brainfsck</a>, a tape-based esoteric language consisting 
 of eight pointer commands invented by <a href="http://esolangs.org/wiki/Urban_M%C3%BCller">Urban Müller</a>.</p>
 
-<h3>Huffman Encoding</h3>
+<h2>Huffman Encoding</h2>
 
 <p><a href="http://en.wikipedia.org/wiki/Huffman_coding">Huffman encoding</a> is an entropy encoding algorithm based on a code table.</p>
 
-<h2>Implementation</h2>
+<h1>Implementation</h1>
 
 <p>CTHULHU will be implemented in C, adhering to the ISO/IEC 9899:1999 standard.</p>
+
+<h1>Documentation</h1>
+
+<p>CTHULHU is documented using the Doxygen system, in both hyperlinked HTML and Latex PDF formats.</p>
+
+<h1>License</h1>
+
+<p>CTHULHU is developed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.</p>
+
+<p><img src="http://www.gnu.org/graphics/gplv3-127x51.png" alt="GPL"></p>
       </section>
 
     </div>
