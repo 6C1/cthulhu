@@ -53,4 +53,4 @@ of eight pointer commands invented by [Urban Müller](http://esolangs.org/wiki/U
 
 ## Implementation
 
-CTHULHU will be implemented in ANSI C.
+CTHULHU will be implemented in C, adhering to the ISO/IEC 9899:1999 standard.
