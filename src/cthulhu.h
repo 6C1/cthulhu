@@ -1,3 +1,4 @@
+
 /*  This file is part of CTHULHU.                                     
  *                                                                      
  *  CTHULHU is free software: you can redistribute it and/or modify   
@@ -12,10 +13,10 @@
  *                                                                    
  *  You should have received a copy of the GNU General Public License 
  *  along with CTHULHU.  If not, see <http://www.gnu.org/licenses/>.  
- *
  */
 
-/*! \brief Structures, macros, constants, and inclusions for CTHULHU.
+/*! \name cthulhu.h 
+ *  \brief Structures, macros, constants, and inclusions for CTHULHU.
  *
  */
  
