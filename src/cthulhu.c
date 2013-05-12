@@ -16,11 +16,13 @@
 
 #include "cthulhu.h"
 
-int main() {
-  char* c = malloc(128*sizeof(char));
+int main(int argc, char* argv[]) {
+  char* c = calloc(256,sizeof(char));
+  c = " ";
   do {
     printf(c);
     scanf("%s",c);
-  } while (c != '\n')
+  } while (strcmp(c,"exit\0")==0);
+  free(c);
   return 0;
 }
