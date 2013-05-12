@@ -26,4 +26,27 @@
 #define MIN(x,y) (x < y) ? x : y
 #define MAX(x,y) (x > y) ? x : y
 
+typedef struct dstr {
+  char* str;
+  int n;
+} dstr_t;
+
+void dstr_init(dstr_t* d, char* s) {
+  d->n = strlen(s) * 8;
+  d->str = calloc(sizeof(char), d->n);
+  strncpy(d->str,s, d->n * sizeof(char));
+}
+
+void dstr_append(dstr_t* d, char* s) {
+  while (d->n - strlen(d->str) - 1 <= strlen(s)) {
+    d->n *= 2;
+    realloc(d->str,d->n);
+  }
+  strcat(d->str,s);
+}
+
+void dstr_free(dstr_t* d) {
+  free(d->str);
+}
+
 #endif

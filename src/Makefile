@@ -27,3 +27,4 @@ clean:
 	rm -f *#
 	rm -f ./cthulhu
 	rm -f *.o
+	rm -f core.*
