@@ -21,6 +21,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define INC(x) ((x)++)
+#define INC(x) (x)++
+#define MIN(x,y) (x < y) ? x : y
+#define MAX(x,y) (x > y) ? x : y
 
 #endif
