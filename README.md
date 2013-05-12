@@ -4,6 +4,8 @@ C To Huffman Unary Library (Head Unit)
 
 CTHULHU is a system for converting C code through brainfsck into huffman-encoded unary.
 
+![GPL](http://www.gnu.org/graphics/gplv3-127x51.png)
+
 ## Central design:
 
 ### C to Huffman Unary Conversion
