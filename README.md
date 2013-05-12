@@ -23,7 +23,7 @@ CTHULHU is a system for converting C code through brainfsck into huffman-encoded
 
 ![GPL](http://www.gnu.org/graphics/gplv3-127x51.png)
 
-## Central design:
+## Central design
 
 ### C to Huffman Unary Conversion
 
@@ -37,6 +37,13 @@ CTHULHU is a system for converting C code through brainfsck into huffman-encoded
 1. Huffman decoding
 2. Compilation to brainfsck
 3. brainfsck interpreter
+
+## Background
+
+Unary is an ultra-minimalist [esoteric language](http://esolangs.org/wiki/Esoteric_programming_language) 
+consisting of repetitions of a single character. This string represents a series of commands in 
+[brainfsck](http://esolangs.org/w/index.php?title=Brainfsck), a tape-based esoteric language consisting 
+of eight pointer commands invented by [Urban Müller](http://esolangs.org/wiki/Urban_M%C3%BCller).
 
 ## Implementation
 
