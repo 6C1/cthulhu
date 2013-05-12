@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Cthulhu by 6C1</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Cthulhu</h1>
+        <p class="header">C To Huffman Unary Library (Head Unit)</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/6C1/cthulhu/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/6C1/cthulhu/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/6C1/cthulhu">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/6C1">6C1</a></p>
+
+
+      </header>
+      <section>
+        
+
+<h1>CTHULHU</h1>
+
+<p>C To Huffman Unary Library (Head Unit)</p>
+
+<p>CTHULHU is a system for converting C code through brainfsck into huffman-encoded unary.</p>
+
+<p><img src="http://www.gnu.org/graphics/gplv3-127x51.png" alt="GPL"></p>
+
+<h3>Central design</h3>
+
+<h4>C to Huffman Unary Conversion</h4>
+
+<ol>
+<li>C --&gt; brainfsck (via <a href="http://savannah.nongnu.org/projects/libbf">http://savannah.nongnu.org/projects/libbf</a> )</li>
+<li>brainfsck --&gt; unary (via custom compilation)</li>
+<li>unary --&gt; hexadecimal string</li>
+<li>The final string is huffman encoded and stored in a binary file.</li>
+</ol><h4>Runtime interpretation</h4>
+
+<ol>
+<li>Huffman decoding</li>
+<li>Compilation to brainfsck</li>
+<li>brainfsck interpreter</li>
+</ol><h2>Background</h2>
+
+<h3>Unary and Brainfsck</h3>
+
+<p>Unary is an ultra-minimalist <a href="http://esolangs.org/wiki/Esoteric_programming_language">esoteric language</a> 
+consisting of repetitions of a single character. This string represents a series of commands in 
+<a href="http://esolangs.org/w/index.php?title=Brainfsck">brainfsck</a>, a tape-based esoteric language consisting 
+of eight pointer commands invented by <a href="http://esolangs.org/wiki/Urban_M%C3%BCller">Urban Müller</a>.</p>
+
+<h3>Huffman Encoding</h3>
+
+<p><a href="http://en.wikipedia.org/wiki/Huffman_coding">Huffman encoding</a> is an entropy encoding algorithm based on a code table.</p>
+
+<h2>Implementation</h2>
+
+<p>CTHULHU will be implemented in ANSI C.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
