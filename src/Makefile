@@ -17,7 +17,7 @@ CC = gcc
 CFLAGS = -Wall -pedantic -std=c99
 EXEC = cthulhu
 OBJS = cthulhu.o
-SRCS = cthultu.c cthulhu.h
+SRCS = cthulhu.c cthulhu.h
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
 $(OBJS): $(SRCS)
