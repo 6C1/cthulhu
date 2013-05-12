@@ -17,6 +17,10 @@
 #include "cthulhu.h"
 
 int main() {
-  printf("success\n");
+  char* c = malloc(128*sizeof(char));
+  do {
+    printf(c);
+    scanf("%s",c);
+  } while (c != '\n')
   return 0;
 }
