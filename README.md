@@ -15,7 +15,7 @@
     along with CTHULHU.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-CTHULHU is a system for converting C code through brainfsck into huffman-encoded unary.
+CTHULHU is a system for converting C code into huffman-encoded unary.
 
 # Design
 
