@@ -26,8 +26,7 @@
 // Quick function for checking file extension of a filename.
 char *extension (char *filename) {
   char *result = strrchr (filename, '.');
-  if (result == NULL) result = "";
-  return (result);
+  return (result == NULL) ? "" : result;
 }
 
 /*
