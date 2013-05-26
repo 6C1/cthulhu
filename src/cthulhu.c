@@ -22,6 +22,7 @@
 #include <unistd.h>
 
 #include "cthulhu.h"
+#include "./../libbf/libbf.h"
 
 // Quick function for checking file extension of a filename.
 char *extension (char *filename) {
@@ -59,13 +60,17 @@ int main(int argc, char* argv[]) {
       fprintf(stderr, "stat");
       return(EXIT_FAILURE);
     }
-
+    
+    // Load c file into string "sc"
     printf("%lld\n", (long long int) fs.st_size);
     char* sc = malloc((fs.st_size+1) * sizeof(char));
-    FILE* sf = fopen(argv[1],"rt");
+    FILE* sf = fopen(argv[1],"rb");
     fread(sc, sizeof(char), (int) fs.st_size , sf);
     fclose(sf);
-    printf("%s\n",sc);
+    printf("%lld\n",(long long int) sc);
+    
+
+
     /*
      * END COMPILE MODE -----------------------------------^
      */
