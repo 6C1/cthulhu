@@ -48,20 +48,26 @@ int main(int argc, char* argv[]) {
   if ( argcheck < 1 ) {
     // No arguments?
     return(EXIT_FAILURE);
+
   } else if (argcheck==1 && strcmp(extension(argv[1]),".c")==0) {
     /*
-     * COMPILE MODE -------------------------v
+     * COMPILE MODE ---------------------------------------v
      */
     printf("Compile: %s\n",argv[1]);
     struct stat fs;
-    if (stat(argv[1],&fs) == -1) {
-      printf("stat");
+    if (stat(argv[1],&fs) != 0) {
+      fprintf(stderr, "stat");
       return(EXIT_FAILURE);
     }
-    printf("%ll", (long long) fs.st_size);
 
+    printf("%lld\n", (long long int) fs.st_size);
+    char* sc = malloc((fs.st_size+1) * sizeof(char));
+    FILE* sf = fopen(argv[1],"rt");
+    fread(sc, sizeof(char), (int) fs.st_size , sf);
+    fclose(sf);
+    printf("%s\n",sc);
     /*
-     * END COMPILE MODE ---------------------^
+     * END COMPILE MODE -----------------------------------^
      */
 
   } else if (argcheck==2) {

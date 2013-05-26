@@ -42,7 +42,7 @@ typedef struct dstr {
 void dstr_init(dstr_t* d, char* s) {
   d->n = strlen(s) * 8;
   d->str = calloc(sizeof(char), d->n);
-  strncpy(d->str,s, d->n * sizeof(char));
+  strncpy(d->str,s, d->n * sizeof(char) - 1);
 }
 
 void dstr_append(dstr_t* d, char* s) {
